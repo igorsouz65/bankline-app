@@ -15,6 +15,7 @@ import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
 import { CurrencyMaskModule } from "ng2-currency-mask";
 import { CorrentistaComponent } from './components/correntista/correntista.component';
+import { AutofocusFixModule } from 'ngx-autofocus-fix';
 
 registerLocaleData(localePt);
 
@@ -27,6 +28,7 @@ registerLocaleData(localePt);
   ],
   imports: [
     BrowserModule,
+    AutofocusFixModule.forRoot(),
     AppRoutingModule,
     NgbModule,
     FormsModule,
